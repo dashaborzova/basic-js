@@ -19,10 +19,8 @@ function createDreamTeam(members) {
     return false;
   }else{
     for (item in members){
-      console.log(item)
       if(typeof members[item]==='string'){
         newMembers.push(/[a-zA-Z]/g.exec(members[item]))
-        console.log(members[item])
       }
     }
   }
